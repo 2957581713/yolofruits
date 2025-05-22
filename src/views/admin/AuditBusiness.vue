@@ -21,6 +21,9 @@
           <el-menu-item index="3" @click="router.push('/dataset')">
             <span>数据集管理</span>
           </el-menu-item>
+          <el-menu-item index="4" @click="router.push('/feedback')">
+            <span>反馈信息</span>
+          </el-menu-item>
         </el-menu>
       </el-aside>
       <el-main>

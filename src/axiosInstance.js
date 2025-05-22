@@ -34,7 +34,7 @@ instance.interceptors.response.use(
   },
   error => {
     if (error.response && error.response.status === 401) {
-      localStorage.removeItem('token');
+      localStorage.re0moveItem('token');
       if (router) {
         router.push('/login');
       }
@@ -43,7 +43,21 @@ instance.interceptors.response.use(
   }
 );
 
+export const getFeedback = (params) => {
+  return instance({
+    url: '/admin/feedback/get',
+    method: 'get',
+    params
+  });
+};
 
+export const deleteFeedback = (id) => {
+  return instance({
+    url: '/feedback/delete',
+    method: 'get',
+    params: { id }
+  });
+};
 
 export const getAuditBusinessList = (params) =>{
   return instance({

@@ -16,12 +16,20 @@ import DataFruit from '../views/admin/DataFruit.vue';
 import BUY from '../views/buy.vue';
 import member from '../views/member.vue';
 import Caculte from '../views/Caculte.vue';
+import FeedbackInfo from '../views/admin/FeedbackInfo.vue';
 const routes = [
 // admin
+
+
   {
     path: '/adminlogin',
     name: 'AdminLogin',
     component: AdminLogin
+  },
+  {
+    path: '/feedback',
+    name: 'FeedbackInfo',
+    component: FeedbackInfo
   },
   {
     path: '/caculte',
